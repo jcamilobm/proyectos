@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*  width considera border y padding; */
+}
+
+/* fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+:root {
+  /* colors */
+  --primary: #f03535;
+  --background-font: rgb(58, 56, 56, 0.2);
+  --font-color: #fff;
+  --light: #dddddd;
+  --black: rgb(75, 71, 71);
+  --box-shadow-black: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--background);
+}
+
+/* MENU DE NAVEGACIÓN */
+
+.logo-nav {
+  width: 80px;
+  height: 80px;
+  margin-left: 2%;
+  padding: 5px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--primary);
+}
+
+.menu {
+  display: flex;
+  margin-right: 0%;
+}
+
+.menu-item {
+  padding: 0 1%;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+.menu-link {
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--font-color);
+  font-weight: 700;
+}
+
+.menu-link:hover {
+  text-decoration: underline;
+}
+
+/* scroll */
+#scroll-up {
+  position: fixed; /* is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. fuente:https://www.w3schools.com/css/css_positioning.asp */
+  right: 0.5%;
+  bottom: 3%;
+  cursor: pointer;
+  color: #f03535;
+}
+#scroll-up:hover {
+  color: black;
+}
+
+/* Slider */
+.slider {
+  width: 100%;
+  height: 70vh;
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider h2 {
+  margin: 25px 0;
+  font-size: 1rem;
+  border: solid 2px;
+  padding: 3px 40px;
+  border-radius: 10px;
+  opacity: 0.5;
+  color: red;
+}
+
+.slider-info {
+  color: rgb(233, 233, 228);
+  font-size: 0.4rem;
+  max-width: 80;
+  background: rgb(10, 10, 10, 0.8);
+  padding: 10px;
+  border-left: solid 4px red;
+}
+
+.img-container {
+  width: 90%;
+  height: 80%;
+  /* border: 10px solid #35393b; */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  display: flex;
+  align-items: end;
+  box-shadow: var(--box-shadow-black);
+}
+
+.btn-slider {
+  position: absolute;
+  top: 55%;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 3px;
+  background: var(--light);
+  opacity: 0.9;
+  color: var(--black);
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out all;
+}
+.btn-slider:hover {
+  color: var(--primary);
+}
+.btn-sliderPrev {
+  left: 5%;
+}
+.btn-sliderNext {
+  right: 5%;
+}
+
+/* tarjeta de películas debajo del slider */
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(130px, 1fr)
+  ); /* catálogo responsive */
+  gap: 1rem;
+  width: 95%;
+  margin: 20px auto;
+}
+.card {
+  font-size: 0.6rem;
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden; /* oculta lo que sale de la tarjeta */
+  /* background: rgb(185, 90, 26,0.7); */
+}
+.card img {
+  width: 100%;
+  min-height: 220px;
+  max-height: 220px;
+}
+.card img:hover {
+  opacity: 0.7;
+  transform: scale(1.02);
+  cursor: pointer;
+}
+.card-info {
+  margin-top: 2px;
+  font-style: italic;
+  font-weight: bold;
+  margin: 6px 0 2px 0;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
+.card i {
+  margin-right: 3px;
+  color: rgb(201, 201, 42);
+}
+
+/* detalles de película */
+
+.container-info-movie {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: 0 auto;
+}
+.container-info-movie img {
+  margin: 0.3rem 0;
+}
+.info-movie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title-rating {
+  width: 60%;
+  font-size: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-list {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0.2rem;
+  list-style-type: none;
+  padding: 0.2%;
+}
+
+.genre-list li {
+  color: white;
+  opacity: 0.7;
+  background: black;
+  border: solid rgb(19, 19, 19) 0.8px;
+  border-radius: 5px;
+  padding: 0.1rem;
+}
+.info-movie i {
+  color: rgb(181, 181, 90);
+}
+
+.actor-list li {
+  font-style: italic;
+  margin-right: 0.4rem;
+  color: #868383;
+  padding: 4px;
+  border-radius: 3px;
+  text-align: center;
+  border-bottom: rgb(179, 159, 159) solid 1px;
+}
+
+.info-movie p {
+  margin-top: 2%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+/* ======================================================================================================================= */
+
+/* media queries */
+
+@media only screen and (min-width: 1000px) {
+  .container-info-movie {
+    flex-direction: row;
+    max-width: 75%;
+    height: 80vh;
+  }
+  .info-movie {
+    background-color: #0a1013;
+    color: white;
+  }
+  .title-rating {
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    width: 100%;
+  }
+
+  .info-movie p {
+    margin-left: 4%;
+    text-align: start;
+    color: #fff;
+  }
+  .container-info-movie img {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* navegación */
+  nav {
+    justify-content: space-between;
+  }
+
+  .menu {
+    margin-right: 40%;
+  }
+  .menu-link {
+    font-size: 1.6rem;
+  }
+
+  /*  slider */
+  .slider {
+    width: 80%;
+  }
+  .slider-info {
+    font-size: 1.3rem;
+  }
+
+  /* cards debajo slider */
+  .cards-grid {
+    width: 85%;
+    /*  margin: 0 auto; */
+    /*  grid-template-columns: repeat(7, minmax(1px, 100%)); */
+  }
+}

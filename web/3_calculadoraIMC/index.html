@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles//main.css">
+</head>
+<body>
+   
+    <div class="container-main">
+        <!-- formulario -->
+        <div class="container-form">
+            <h1 class="form-title">CALCULADORA IMC</h1>
+            <a class="link-statistics" href="./pages/statistics.html">
+                <i class="fas fa-chart-pie" style="font-size: 0.8rem"></i>
+                Ir a estadisticas
+            </a>
+            <h2 class="form-subtitle">Descubre tu índice de masa corporal</h2>
+            <form id="form">
+
+                <div class="groupInputRadio" >
+                    <label>
+                        <input type="radio" name="gender" id="genre" value="hombre"  required >
+                        <i class="fas fa-male"></i>
+                    </label>
+        
+                    <label>
+                        <input  class="inputGender" type="radio" name="gender" value="mujer"  >
+                        <i class="fas fa-female"></i>
+                    </label>
+                </div>
+
+                <div class="groupInput">
+                    <label for="inputAge">Edad</label>
+                    <input id="inputAge" type="number" required min="0" max="125">
+                    <span></span>
+                </div>
+                <div class="groupInput">
+                    <label for="inputWeight">Peso</label>
+                    <input id="inputWeight" type="number" required min="1" max="600" step="0.01">
+                    <span style="color:rgb(15, 189, 15) ; font-weight:bold" >KG</span>
+                </div>
+                <div class="groupInput">
+                    <label for="inputHeight">Altura</label>
+                    <input id="inputHeight" type="number" required min="0.3" max="2.6" step="0.01">
+                    <span style="color:rgb(15, 189, 15) ; font-weight: bold;">M</span>
+                </div>
+              
+                    <button id="btnForm">CALCULAR</button>
+               
+            </form>
+        </div>
+
+    <!--  resultado -->
+        <div class="container-result">
+               
+              <h2 class="result-title">Resultado</h2>
+              <h3 id="IMCOutput"> ? </h3>
+              <!-- rango de IMC -->
+              <div class="range-gradient">
+                <i class="fas fa-sort-up" id="arrow"></i>
+              </div>
+
+            </hr>
+
+              <h4>Peso ideal: <span id="IdealWeightOutput"> ? </span> (KG)</h4>
+          
+              <!-- pesas iconos -->
+              <div class="container-weight">
+                <span><i class="fas fa-weight" style="color: blue"></i>Por debajo del peso</span>
+                <span><i class="fas fa-weight" style="color: rgb(28, 202, 28)"></i>Saludable</span>
+                <span><i class="fas fa-weight" style="color: yellow"></i>Con sobrepeso</span>
+                <span><i class="fas fa-weight" style="color: orange"></i> Obeso</span>
+                <span><i class="fas fa-weight" style="color: red"></i>Alto riesgo</span>
+              </div>
+        </div>
+
+     </div>
+
+     <!-- enlazar a JavaScript -->
+     <script type="module" src="./javascript/main.js"></script>
+   
+</body>
+</html>

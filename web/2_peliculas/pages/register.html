@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>movies register</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../style/main.css" />
+    <link rel="stylesheet" href="../style/form.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img class="logo-nav" src="../img/logo.png" alt="logo" />
+        <ul class="menu">
+          <li class="menu-item">
+            <a class="menu-link" href="../index.html"> Inicio </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="../pages/register.html">Registro</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container-form">
+        <h1 class="titleForm">Formulario de registro</h1>
+        <form id="form">
+          <div class="formGroup">
+            <label for="inputName">Nombre</label>
+            <input id="inputName" type="text" placeholder="Escribe tu nombre" required />
+          </div>
+
+          <div class="formGroup">
+            <label for="inputLastname">Apellido</label>
+            <input
+              id="inputLastname"
+              type="text"
+              placeholder="Escribe tu apellido"
+              required
+            />
+          </div>
+
+          <div class="formGroup">
+            <label for="inputPhone">Telefóno</label>
+            <input
+              id="inputPhone"
+              type="tel"
+              placeholder="Escribe tu teléfono"
+              required
+            />
+          </div>
+
+          <div class="formGroup">
+            <label for="inputAddress">Dirección</label>
+            <input
+              id="inputAddress"
+              type="text"
+              placeholder="Escribe tu dirección"
+              required
+            />
+          </div>
+
+          <div class="formGroup formGroupArea">
+            <label for="inputComments">Observaciones:</label>
+            <textarea  id="inputComments" rows="4"cols="30"  placeholder="Escribe tus observaciones..." required></textarea>
+          </div>
+
+          <button id="btnSubmit">Enviar</button>
+        </form>
+
+        <!-- DATOS DE SALIDA -->
+        <div id="divOutput">
+          <!-- si hay error de validacion sale rojo -->
+          <!-- de lo contrario muestra resultado registro exitoso.-->
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <!-- para cargar js -->
+    <script src="../js/form.js"></script>
+  </body>
+</html>

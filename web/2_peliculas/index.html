@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>movies</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img class="logo-nav" src="./img/logo.png" alt="logo" />
+        <ul class="menu">
+          <li class="menu-item">
+            <a
+              class="menu-link"
+              href="https://academia-geek.github.io/aprendices-geek-entrenamiento-jcamilobm/Modulo-3/Tarea-02/index.html"
+            >
+              Inicio
+            </a>
+          </li>
+          <!--     <li class="menu-item">
+            <a id="btnRegister" class="menu-link" href="#">Registro</a>
+          </li> -->
+          <li class="menu-item">
+            <a class="menu-link" href="./pages/register.html">Registro</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!--  págian de Inicio -->
+      <div class="container-home">
+        <i class="fas fa-arrow-circle-up" id="scroll-up"></i>
+        <!--  scroll -->
+
+        <section class="slider">
+          <h2>Top movies</h2>
+          <div class="img-container">
+            <!--  contenido slider -->
+          </div>
+          <button class="btn-slider btn-sliderPrev">
+            <i class="fas fa-caret-left"></i>
+          </button>
+          <button class="btn-slider btn-sliderNext">
+            <i class="fas fa-caret-right"></i>
+          </button>
+        </section>
+
+        <section class="cards-grid">
+          <!--    <div class="card">
+                  <img id="1" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjQxMDE5NDg0NV5BMl5BanBnXkFtZTgwNTA5MDE2NDM@._V1_SY500_CR0,0,337,500_AL_.jpg">
+                  <div card-info>
+                    <h2 >Game Night</h2>
+                    <i class="fas fa-star"></i>
+                    <span class="card-info-rating">7.8</span>
+                  </div> 
+              </div>    
+
+              <div class="card">
+                <img id="2" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjQxMDE5NDg0NV5BMl5BanBnXkFtZTgwNTA5MDE2NDM@._V1_SY500_CR0,0,337,500_AL_.jpg">
+                <div card-info>
+                  <h2>Game Night</h2>
+                  <i class="fas fa-star"></i>
+                  <span class="card-info-rating">7.8</span>
+                </div> 
+            </div>    
+              -->
+        </section>
+      </div>
+
+      <!-- página con Información detallada de la película seleccioanda. -->
+      <section class="container-info-movie"></section>
+    </main>
+
+    <footer></footer>
+
+    <!-- Un script que utilice este module ahora podrá utilizar las caraterísticas import y export -->
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

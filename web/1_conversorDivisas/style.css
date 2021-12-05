@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* width definido tiene en cuenta border y padding */
+}
+
+body {
+  /* background: rgb(214, 213, 213); */
+  background: url(./img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.9;
+}
+
+
+.container-divisas {
+  background: rgb(196, 192, 192);
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.container-divisas {
+  text-align: center;
+  border-radius: 15px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+#form {
+  margin-bottom: 20px;
+}
+
+#selectInputMoney {
+  margin-right: 20px;
+  border-radius: 3px;
+}
+
+button {
+  font-size: 16px;
+  margin-left: 30px;
+  padding: 4px 30px;
+  border-radius: 4px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgb(28, 128, 70);
+}
+
+#inputMoney {
+  margin-bottom: 20px;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+}
+.container-inputMoney::before {
+  content: " \0024"; /* otros símbolos -> https://www.w3schools.com/cssref/css_entities.asp */
+  color: black;
+  font-size: 17px;
+}
+
+.container-inputMoney {
+  position: relative; /* para que la bandera se mueva respecto a este contenedor */
+}
+#flag-input {
+  position: absolute;
+  right: 37.5%;
+  top: 3.5px;
+}
+
+/* contenedor de salida */
+
+.successfulResult {
+  background: #4caf50;
+  padding: 10px 20px;
+  color: white;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+.successfulResult h2 {
+  font-size: 3rem;
+  margin-top: 3px;
+  display: inline;
+}
+
+.successfulResult span,
+.successfulResult span {
+  position: relative;
+  bottom: 10px;
+  left: 5px;
+}
+
+.failedResult {
+  background: #bd584d;
+  padding: 10px 20px;
+  color: white;
+  opacity: 0.7;
+  border-radius: 10px;
+}
+
+/* se organiza media queries */
+@media only screen and (max-width: 857px) {
+  .container-divisas {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 637px) {
+  .container-divisas {
+    width: 95%;
+  }
+  #form button {
+    margin-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 636px) {
+  .container-divisas {
+    width: 95%;
+  }
+
+  #form #selectInputMoney {
+    margin: 0;
+    margin-bottom: 6px;
+  }
+
+  #form button {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  #flag-input {
+    right: 15%;
+  }
+}

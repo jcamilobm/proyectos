@@ -1,0 +1,27 @@
+
+/* carrusel */
+.carousel-item {
+    height: 30rem;
+    background: rgb(22, 22, 22);
+    color: white;
+    position: relative;
+}
+
+.container-carousel {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right: 0;
+    padding-bottom: 50px;
+}
+.overlay-image{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+
+}

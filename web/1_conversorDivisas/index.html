@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>divisas</title>
+    <!-- iconos de las banderas -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/css/flag-icons.min.css"
+      integrity="sha512-UwbBNAFoECXUPeDhlKR3zzWU3j8ddKIQQsDOsKhXQGdiB5i3IHEXr9kXx82+gaHigbNKbTDp3VY/G6gZqva6ZQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- página de estilos -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- DATOS DE ENTRADA -->
+    <section class="container-divisas">
+      <div>
+        <img src="./img/conversion.png" alt="imagen dinero" />
+      </div>
+      <form id="form">
+        <div class="container-inputMoney">
+          <!-- <label for="inputMoney"></label> -->
+          <input id="inputMoney" placeholder="Cantidad de Dinero:" />
+          <span id="flag-input"></span>
+        </div>
+        <div class="containerInputs">
+          <select id="selectInputMoney" class="selectInput">
+            <!--<option value="Elige tu Moneda">Elige tu Moneda</option>
+            <option value="Dolar">Dolar</option>
+            <option value="Peso Mexicano">Peso Mexicano</option> -->
+          </select>
+
+          <select id="selectOutputMoney" class="selectInput">
+            <!--<option value="Elige tu Moneda">Elige tu Moneda</option>
+            <option value="Dolar">Dolar</option>
+            <option value="Peso Mexicano">Peso Mexicano</option> -->
+          </select>
+
+          <button type="submit">convertir</button>
+        </div>
+      </form>
+
+      <!-- DATOS DE SALIDA -->
+      <div id="divOutput">
+        <!-- si hay error de validacion sale rojo -->
+        <!-- de lo contrario muestra resultado calculo -->
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

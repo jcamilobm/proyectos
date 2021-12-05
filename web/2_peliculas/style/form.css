@@ -1,0 +1,99 @@
+/* ESTILOS FORMULARIO DE REGISTRO */
+
+
+.container-form {
+  background: rgb(210, 216, 208);
+  width: 95%;
+  margin: 10px auto;
+  padding: 5px;
+  border-radius: 5px;
+  border: solid 2px black;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.formGroup,
+.titleForm {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.formGroupArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formGroupArea label {
+  margin-right: 70px;
+}
+
+.titleForm {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+#btnSubmit {
+  width: 80px;
+  align-self: center;
+  color: white;
+  background: rgb(81, 112, 49);
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+#btnSubmit:hover {
+  background: rgb(81, 112, 49, 0.8);
+  cursor: pointer;
+}
+
+.successfulResult,
+.failedResult {
+  color: white;
+  font-size: 0.8rem;
+
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.successfulResult {
+  background: #4caf50;
+  list-style-type: none;
+}
+.failedResult {
+  background: #e84937;
+}
+
+/* media queries */
+@media only screen and (min-width: 500px) {
+    .container-form {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    main {
+        height: 80vh; 
+        display: flex;
+        align-items: center;
+    }
+    
+  .container-form {
+    width: 30%;
+    padding:30px 0 5px 0;
+  }
+  #btnSubmit{
+      margin:10px;
+      padding: 10px;
+  }
+
+
+
+
+}
