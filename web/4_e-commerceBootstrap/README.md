@@ -59,13 +59,7 @@ Una vez el usuario haga clic en PAGAR se debe almacenar los datos del carrito y 
 localStorage para que el carrito quede nuevamente vacío.
 
 
-Para realizar la entrega de esta actividad debe realizar los siguientes pasos:
 
-    1. Crear un Issues llamado Entrega-Modulo-3-Tarea-04-Ecommerce
-    2. Al Issues adicionar un pantallazo con el enunciado de la tarea
-    3. Luego debes agregar la descripción de los pasos que ejecutaste para dar solución a la tarea y 
-       adjuntar las imágenes de evidencia.  
-    4. Etiquetar al formador a cargo “@JohnFlorez25” el cual revisará su ejercicio y dará las respectivas observaciones  
 
 
 
