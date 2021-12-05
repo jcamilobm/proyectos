@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "sweetalert2": "^11.1.7",
+    "vuejs-datepicker": "^1.6.2"
+  }
+}
