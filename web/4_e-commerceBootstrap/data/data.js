@@ -13,7 +13,7 @@ export const data = [
         "name": "ZNSHINE doble vidrio",
         "price":579000 ,
         "category":"paneles",
-        "description":"330 Watts Doble vidrio Policristalino con 1956x992x40mm y 72 células.",
+        "description":"330 Watts Doble vidrio Policristalino con 1956x992x40mm y 72 células",
         "image": "../images/2.png"
     },
     {
