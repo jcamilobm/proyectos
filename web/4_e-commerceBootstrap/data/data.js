@@ -117,7 +117,7 @@ export const data = [
         "name": "Lampara Trabajo Solar",
         "price":28000 ,
         "category":"lamparas",
-        "description":"Esta lampara de trabajo, cuenta con un panel solar para ser recargado, a su vez sirve como power bank para recargar celulares, ademas tiene 2 modos, linterna lateral y frontal con dos luces led super potente. Esta linterna es resistente a salpicaduras de agua como de lluvia. Esta linterna es ideal para camping, inspecciones y como foco de emergencia para tu carro,",
+        "description":"Esta lampara de trabajo,cuenta con un panel solar para ser recargado, a su vez sirve como power bank para recargar celulares, ademas tiene 2 modos, linterna lateral y frontal con dos luces led super potente. Esta linterna es resistente a salpicaduras de agua como de lluvia. Esta linterna es ideal para camping, inspecciones y como foco de emergencia para tu carro,",
         "image": "../images/15.png"
     },
     {
